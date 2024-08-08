@@ -5,6 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iynesh's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        #home {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #eee;
+        }
+
+        #home img {
+            border-radius: 50%;
+            width: 150px;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #about, #projects, #blog, #contact {
+            background-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .tech-item {
+            width: 150px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project-item {
+            width: 300px;
+            background-color: #f9f9f9;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -29,14 +141,54 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I have a Master's degree in AI and ML from BITS Pilani. My expertise spans various AI technologies, including deep learning, computer vision, and real-time AI solutions.</p>
+        <p>I have a Master's degree in AI and ML from BITS Pilani. My expertise spans various AI technologies, including deep learning, computer vision, and real-time AI solutions. I am passionate about applying my skills to solve complex problems in various domains, including finance, healthcare, and automation.</p>
         <h3>Tools & Technologies</h3>
         <div class="tech-grid">
-            <!-- Add your tools and technologies here -->
+            <div class="tech-item">
+                <h4>Python</h4>
+            </div>
+            <div class="tech-item">
+                <h4>TensorFlow</h4>
+            </div>
+            <div class="tech-item">
+                <h4>PyTorch</h4>
+            </div>
+            <div class="tech-item">
+                <h4>Oracle DB</h4>
+            </div>
+            <div class="tech-item">
+                <h4>Azure</h4>
+            </div>
         </div>
     </section>
 
-    <!-- Add other sections like Projects, Blog, and Contact here -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>Fraud Detection System</h3>
+                <p>Developed a real-time fraud detection system using ANN for transaction monitoring across various platforms, including ATMs, POS, and online transactions.</p>
+            </div>
+            <div class="project-item">
+                <h3>Attendance Monitoring System</h3>
+                <p>Created an automated attendance monitoring system for 100 employees, integrating facial recognition and real-time tracking.</p>
+            </div>
+            <div class="project-item">
+                <h3>In-House Chatbot</h3>
+                <p>Implemented a custom chatbot using a pre-trained model from Hugging Face, deployed on a Linux server for internal communications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Stay tuned for my latest articles and insights on AI, machine learning, and the future of technology.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, please reach out via email at <a href="mailto:your-email@example.com">your-email@example.com</a> or connect with me on LinkedIn.</p>
+    </section>
 
     <footer>
         <p>© 2024 Iynesh. All Rights Reserved.</p>
