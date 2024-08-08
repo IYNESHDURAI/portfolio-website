@@ -58,7 +58,7 @@ section {
 
 #home {
     text-align: center;
-    background-color: #007bff;
+    background-color: #0056b3; /* Darker background color for better contrast */
     color: #fff;
 }
 
@@ -77,8 +77,16 @@ section {
     font-size: 1.2em;
     max-width: 600px;
     margin: 20px auto;
+    line-height: 1.6;
 }
 
+/* Updated text in #home section */
+#home .intro {
+    font-size: 1.5em;
+    color: #fff; /* Ensure the text color contrasts with the background */
+}
+
+/* Button Styling */
 .button {
     display: inline-block;
     margin: 10px;
@@ -94,6 +102,7 @@ section {
     background-color: #007bff;
 }
 
+/* About, Projects, Blog, and Contact Sections */
 #about h2,
 #projects h2,
 #blog h2,
